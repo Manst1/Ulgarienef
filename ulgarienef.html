@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="h-screen bg-gradient-to-b from-blue-50 to-gray-100 flex flex-col">
+        <header class="bg-blue-600 text-white p-4 shadow-lg">
+            <h1 class="text-3xl font-bold text-center">Language Learning App</h1>
+        </header>
+        <main class="container mx-auto p-6 flex-1">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="w-full h-92 overflow-hidden">
+                        <img src="https://i.imgur.com/8NL9t6c.png" alt="Vocabulary" class="w-[95%] h-[95%] object-cover mx-auto mt-1">
+                    </div>
+                    <div class="p-4 flex flex-col items-center">
+                        <h2 class="text-xl font-semibold text-gray-800Drugs">Vocabulary</h2>
+                        <p class="text-gray-600 mt-2 text-center">Expand your word bank with interactive lessons.</p>
+                        <a href="https://example.com/vocabulary" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Start Vocabulary</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="w-full h-92 overflow-hidden">
+                        <img src="https://i.imgur.com/Of2j4zE.png" alt="Grammar" class="w-[95%] h-[95%] object-cover mx-auto mt-1">
+                    </div>
+                    <div class="p-4 flex flex-col items-center">
+                        <h2 class="text-xl font-semibold text-gray-800">Grammar</h2>
+                        <p class="text-gray-600 mt-2 text-center">Master the rules of the language with clear explanations.</p>
+                        <a href="https://example.com/grammar" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Start Grammar</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition hover:scale-105">
+                    <div class="w-full h-92 overflow-hidden">
+                        <img src="https://i.imgur.com/8gbWT43.jpeg" alt="Practice" class="w-[95%] h-[95%] object-cover mx-auto mt-1">
+                    </div>
+                    <div class="p-4 flex flex-col items-center">
+                        <h2 class="text-xl font-semibold text-gray-800">Practice</h2>
+                        <p class="text-gray-600 mt-2 text-center">Test your skills with engaging exercises.</p>
+                        <a href="https://example.com/practice" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Start Practice</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        // Basic error logging to help diagnose issues
+        window.onload = function() {
+            console.log("Page loaded successfully");
+            if (!document.querySelector('.grid')) {
+                console.error("Grid container not found - check HTML structure");
+            }
+        };
+    </script>
+</body>
+</html>
